@@ -31,15 +31,15 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_item1 -> {
-                tvSelectedOption.text = "Selected Option: Option 1"
+                tvSelectedOption.text = "Pilihan 1"
                 return true
             }
             R.id.menu_item2 -> {
-                tvSelectedOption.text = "Selected Option: Option 2"
+                tvSelectedOption.text = "Pilihan 2"
                 return true
             }
             R.id.menu_item3 -> {
-                tvSelectedOption.text = "Selected Option: Option 3"
+                tvSelectedOption.text = "Pilihan 3"
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPicker() {
-        val pickerOptions = arrayOf("Option 1", "Option 2", "Option 3")
+        val pickerOptions = arrayOf("Opsi 1", "Opsi 2", "Opsi 3")
 
         val builder = androidx.appcompat.app.AlertDialog.Builder(this)
         builder.setTitle("Select an option")
